@@ -58,7 +58,7 @@ def approx_average_is_average(hand):
     `true average`?
     """
     average = card_average(hand)
-    first_last = min(hand) + max(hand) / 2
+    first_last = (min(hand) + max(hand)) / 2
 
     return first_last == average or statistics.median(hand) == average
 
